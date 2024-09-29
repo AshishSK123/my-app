@@ -14,16 +14,16 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/my-app/home">Home</Link>
+                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/About/a">About</Link>
+                <Link className="nav-link" to="/About">About</Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
               <div className="form-check form-switch">
                 <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                <label className="form-check-label" style={props.mode === 'light' ? { color: 'black' } : { color: 'white' }} htmlFor="flexSwitchCheckDefault">{props.mode}</label>
+                <label className="form-check-label" style={props.mode === 'light' ? { color: 'black' } : { color: 'white' }} htmlFor="flexSwitchCheckDefault">Enable {props.mode}</label>
               </div>
             </form>
           </div>
