@@ -44,7 +44,7 @@ function App() {
         <Navbar title={"Text Manipulation"} mode={mode} toggleMode={toggleMode} />
         <Alert msg={msg} />
           <Routes>
-            <Route exact path="/" element={<Textinput input={"Enter Text  Here!"} mode={mode} alert={showAlert} />} />
+            <Route exact path="/my-app/" element={<Textinput input={"Enter Text  Here!"} mode={mode} alert={showAlert} />} />
             <Route path="/About" element={<About mode={mode} />} />
           </Routes>
         </div>
