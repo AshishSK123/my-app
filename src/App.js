@@ -40,9 +40,9 @@ function App() {
   return (
     <>
       <Router>
+        <div className="container">
         <Navbar title={"Text Manipulation"} mode={mode} toggleMode={toggleMode} />
         <Alert msg={msg} />
-        <div className="container">
           <Routes>
             <Route exact path="/my-app/home" element={<Textinput input={"Enter Text  Here!"} mode={mode} alert={showAlert} />} />
             <Route path="/About/a" element={<About mode={mode} />} />
