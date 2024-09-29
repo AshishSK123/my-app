@@ -26,14 +26,13 @@ function App() {
     }
   }
 
-  const [msg,setMsg]=useState(null);
+  const [msg, setMsg] = useState(null);
 
-  function showAlert(message)
-  {
+  function showAlert(message) {
     setMsg(message)
-    setTimeout(()=>{
+    setTimeout(() => {
       setMsg(null);
-    },1500)
+    }, 1500)
   }
 
 
@@ -42,10 +41,10 @@ function App() {
     <>
       <Router>
         <Navbar title={"Text Manipulation"} mode={mode} toggleMode={toggleMode} />
-        <Alert msg={msg}/>
+        <Alert msg={msg} />
         <div className="container">
           <Routes>
-            <Route exact path="/my-app/" element={<Textinput input={"Enter Text  Here!"} mode={mode} alert={showAlert}/>} />
+            <Route exact path="/my-app/home" element={<Textinput input={"Enter Text  Here!"} mode={mode} alert={showAlert} />} />
             <Route path="/About" element={<About mode={mode} />} />
           </Routes>
         </div>
