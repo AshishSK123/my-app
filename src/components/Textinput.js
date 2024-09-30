@@ -22,7 +22,8 @@ export default function Textinput(props) {
   // to split words by blank spaces for words count
   function wordCal() {
     let count = 0;
-    count = Text.split(" ").filter((element) => {
+    //'\s' is used to ignore white spaces
+    count = Text.split(/\s+/).filter((element) => {
       return element.length !== 0;
     }).length
     return count
