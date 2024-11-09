@@ -5,7 +5,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <nav style={{border:'1px solid black'}} className={`navbar navbar-expand-lg  navbar-${props.mode} bg-${props.mode}`}>
+      <nav style={{border:'1px solid black'}} className={`navbar navbar-expand-lg  fixed-top navbar-${props.mode} bg-${props.mode}`}>
         <div className="container-fluid">
           <b className="navbar-brand">{props.title}</b>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
